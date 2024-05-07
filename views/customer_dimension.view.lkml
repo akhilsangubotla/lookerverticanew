@@ -127,7 +127,8 @@ view: customer_dimension {
   }
 
   measure: count {
-    type: count
-    drill_fields: [customer_name]
+    tags: ["Important Data", "Customer Data"]
+    type: count_distinct
+    sql: ${TABLE} ;;
   }
 }
