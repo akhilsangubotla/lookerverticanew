@@ -10,7 +10,10 @@ datagroup: vertica_model_01_default_datagroup {
 
 persist_with: vertica_model_01_default_datagroup
 
-explore: customer_dimension {}
+explore: customer_dimension {
+  tags: ["string1","string2"]
+}
+
 
 explore: date_dimension {}
 
